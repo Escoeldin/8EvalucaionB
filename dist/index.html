@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WoW</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="page-container">
+  <div class="charecterdoll-container">
+  <div class="armory-errors-container">
+    <div class="armory-errors"></div>
+  </div>
+  <div class="armory-errors-container">
+    <div class="armory-error-message">
+      <div id="armory-err-message"></div>
+      <div id="btn-error-continue">Continue</div>
+    </div>
+  </div>
+  <div class="charecterdoll">
+    <div class="user-input">
+      Server:
+      <select class="input-element" id="servers">
+        <option name="test">Stormrage</option>
+      </select>
+    </div>
+    <div class="user-input">
+      <div style="float:left">Name:&nbsp;
+        <input type="text" id="charName" class="input-element" />
+      </div>
+      <div style="float:left"><span id="charecter-search">Search</span></div>
+    </div>
+    <div class="container-charecterdoll">
+      <div class="charecter-name">
+        Sindrane
+      </div>
+      <div class="itemlabel">
+        <div class="item" id="head">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="neck">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="shoulder">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="back">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="chest">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="shirt">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="tabard">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+        <div class="item" id="wrist">
+          <div class="itemstats-container">
+            <div class="itemstats"></div>
+          </div>
+        </div>
+      </div>
+      <div class="itemlabel">
+        <div class="paperdoll">
+          <div style="position:relative;">
+            <div class="paperdoll-stats-large">
+              <div id="paperdoll-server"></div>
+              <div id="paperdoll-ilvl" /></div>
+          </div>
+        </div>
+        <div class="paperdoll-container">
+          <img class="portrait" />
+        </div>
+      </div>
+    </div>
+    <div class="itemlabel">
+      <div class="item" style="border-top-right-radius:1px;" id="hands">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="waist">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="legs">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="feet">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="finger1">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="finger2">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="trinket1">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="item" id="trinket2">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="items-in-hand-container">
+    <div class="items-in-hand">
+      <div class="hands" id="mainHand">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+      <div class="hands" id="offHand">
+        <div class="itemstats-container">
+          <div class="itemstats"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript" src="/php_wow_api/js/paperDoll.js"></script>
+<script type="application/javascript" src="/php_wow_api/js/RealmsObject.js"></script>
+</div>
+<div class="debug-data-container">
+  <div class="debug-info-header">Debug Info</div>
+  <div class="debug-info-menubar">
+    <div class="debug-info-menu" id="debug-menu-character">Character</div>
+    <div class="debug-info-menu" id="debug-menu-guild">Guild</div>
+  </div>
+  <div class="debug-output" id="debug-output-character" />
+  <div class="debug-output" id="debug-output-guild" />
+</div>
+</div>
+<!-- partial -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

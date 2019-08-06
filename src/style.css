@@ -1,0 +1,324 @@
+body{
+  box-sizing:border-box;
+}	
+@charset "utf-8";
+	/* CSS Document */
+.page-container{
+  overflow:hidden;
+  min-width:1100px;
+}	
+
+	.charecterdoll-container {
+	  border: 1px solid black;
+	  width: 354px;
+	  height: 520px;
+	  border-collapse: collapse;
+	  border-radius: 9px;
+	  background-color: #222;
+	  padding: 3px;
+	  float: left;
+	}
+	
+	.charecterdoll {
+	  width: 354px;
+	  height: 520px;
+	  border-collapse: collapse;
+	  border-radius: 9px;
+	  background-color: #333;
+	  padding: 5px;
+	}
+	
+	.item {
+	  background-color: #222;
+	  height: 48px;
+	  width: 48px;
+	  text-align: center;
+	  vertical-align: middle;
+	  border: 1px solid black;
+	  border-radius: 5px;
+	}
+	
+	.user-input {
+	  margin: 2px 2px 2px 15px;
+	  border-bottom: none;
+	  color: gold;
+	  height: auto;
+	  width: 354px;
+	  font-size: .75em;
+	}
+	
+	.input-element {
+	  margin-left: 15px;
+	  font-size: .85em;
+	  min-width: 200px;
+	  background-color: silver;
+	  border: 1px double #333;
+	}
+	
+	#charecter-search {
+	  display: block;
+	  font-size: .85em;
+	  margin-left: 15px;
+	  border: 1px solid gold;
+	  height: 12px;
+	  border-radius: 3px;
+	  float: left: width: 45px;
+	  max-width: 45px;
+	  margin-bottom: 5px;
+	}
+	
+	#charecter-search:hover {
+	  cursor: pointer;
+	  cursor: hand;
+	}
+	
+	.charecter-name {
+	  border: 1px solid darkgoldenrod;
+    border-radius: 9px;
+	  color: gold;
+	  height: 30px;
+	  display: table-cell;
+	  width: 350px;
+	  text-align: center;
+	  vertical-align: middle;
+	  margin: 2px;
+	}
+	
+	.itemstats-container {
+	  display: block;
+	  position: relative;
+	  float: left;
+	  width: inherit;
+	  height: inherit;
+	}
+	
+	.itemstats {
+	  display: none;
+	  position: absolute;
+	  z-index: 9999;
+	  top: 0;
+	  left: 0;
+	  height: 75px;
+	  width: 75px;
+	  border: 1px solid black;
+	  border-radius: 5px;
+	  background: silver;
+	  text-align: left;
+	  padding: 7px;
+	  margin: 2px;
+	}
+	
+	.paperdoll {
+	  width: 250px;
+	  height: 399px;
+	  background-color: #222;
+	  text-align: center;
+	  vertical-align: middle;
+	  border: 1px solid black;
+	  border-bottom: none;
+	}
+	
+	.paperdoll-stats-large {
+	  color: goldenrod;
+	  font-size: .75em;
+	  width: 95%;
+	  text-align: left;
+	  padding-left: 10px;
+	  padding-top: 10px;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 500;
+	  border-collapse: collapse;
+	}
+	
+	.items-in-hand-container {
+	  display: block;
+	  position: relative;
+	  float: left;
+	  width: inherit;
+	  height: inherit;
+	}
+	
+	.items-in-hand {
+	  display: block;
+	  position: absolute;
+	  z-index: 1;
+	  top: -25.5px;
+	  left: 125px;
+	  border: 1px solid black;
+	  border-radius: 5px;
+	  height: 50px;
+	  width: 100px;
+	}
+	
+	.hands {
+	  background-color: #666;
+	  height: 48px;
+	  width: 48px;
+	  text-align: center;
+	  vertical-align: middle;
+	  border: 1px solid gold;
+	  border-radius: 5px;
+	  float: left;
+	}
+	/*
+		********  Armory Errors  ********
+	*/
+	
+	.armory-errors-container {
+	  position: relative;
+	}
+	
+	.armory-errors {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  display: block;
+	  width: 354px;
+	  ;
+	  height: 520px;
+	  ;
+	  background-color: silver;
+	  z-index: 10000;
+	  background: rgba(0, 0, 0, 0.75);
+	}
+	
+	.armory-error-message {
+	  position: absolute;
+	  top: 210px;
+	  left: 77px;
+	  height: 100px;
+	  width: 200px;
+	  border: 1px solid black;
+	  border-radius: 10px;
+	  background: silver;
+	  z-index: 10001;
+	  display: table;
+	  text-align: center;
+	  vertical-align: middle;
+	  font-size: 1em;
+	}
+	
+	.armory-error-message {
+	  margin: 5px;
+	  padding: 10px;
+	}
+	
+	#armory-err-message {
+	  margin: 5px;
+	  margin-top: 10px;
+	}
+	
+	#btn-error-continue {
+	  margin: 0 auto;
+	  max-width: 70px;
+	  border: 1px solid black;
+	  border-radius: 5px;
+	}
+	
+	#btn-error-continue:hover {
+	  cursor: pointer;
+	  cursor: hand;
+	}
+	/*
+		********  Debug Console  ********
+	*/
+	
+	.debug-data-container {
+	  float: left;
+	  margin: 0 20px 0 20px;
+	  width: 650px;
+	  height: 525px;
+	  background-color: #333;
+	  border-radius: 7px;
+	}
+	
+	.debug-info-header {
+	  width: 100%;
+	  text-align: center;
+	  color: gold;
+	  margin: 10px 0 3px 0;
+	}
+	
+	.debug-info-menubar {
+	  padding: 3px 0 3px 0;
+	  width: 100%;
+	  border: 0 1px 0 1px solid black;
+	  border-bottom: none;
+	  background-color: #333;
+	  height: 20px;
+	}
+	
+	.debug-info-menu {
+	  float: left;
+	  color: darkgoldenrod;
+	  padding: 2px 10px 2px 10px;
+	  height: 20px;
+	  border-right: 1px solid #444;
+	  width: 75px;
+	  text-align: center;
+	}
+	
+	.debug-info-menu-active {
+	  background: linear-gradient(#333, #666, #333);
+	  height: 19px;
+	  color: gold;
+	}
+	
+	.debug-info-menu:hover {
+	  color: gold;
+	  cursor: hand;
+	  cursor: pointer;
+	  background: linear-gradient(#333, #666, #333);
+	}
+	
+	.debug-output {
+	  overflow: scroll;
+	  border: 1px solid black;
+	  width: 638px;
+	  height: 455px;
+	  display: none;
+	  background-color: silver;
+	  margin: 0 5px 0 5px;
+	}
+	
+	@charset "utf-8";
+	/* CSS Document */
+	
+	body {
+	  background-color: #222;
+    overflow:hidden;
+	}
+	
+	span {
+	  padding: 2px;
+	}
+	
+	.displayText {
+	  color: gold;
+	}
+	
+	.content {
+	  margin: 0px 50px 10px 50px;
+	  padding: 10px;
+	  border: 1px groove black;
+	  border-top: none;
+	  border-bottom-left-radius: 15px;
+	  border-bottom-right-radius: 15px;
+	  background-color: silver;
+	  min-height: 550px;
+	  height: auto;
+	}
+	
+	.container {
+	  overflow: hidden;
+	}
+	
+	.itemlabel {
+	  float: left;
+	}
+	
+	.iteminput {
+	  float: left;
+	}
